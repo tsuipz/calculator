@@ -14,7 +14,7 @@ const showList = () => {
 	const equation = calculated[calculated.length - 1];
 	const li = document.createElement('li');
 	li.textContent = equation;
-	list.appendChild(li);
+	list.prepend(li);
 };
 
 const onClear = () => (ac.textContent = equation.length === 0 ? 'AC' : 'C');
